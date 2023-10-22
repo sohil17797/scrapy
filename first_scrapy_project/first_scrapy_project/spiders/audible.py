@@ -33,7 +33,7 @@ class AudibleSpider(scrapy.Spider):
                 "title": title,
                 "author": author,
                 "language": language,
-                "User-Agent": response.request.headers["User-Agent"],
+                # "User-Agent": response.request.headers["User-Agent"],
             }
             
         pagination = response.xpath('//ul[contains(@class, "pagingElements")]')
